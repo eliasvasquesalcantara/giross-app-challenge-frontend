@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+.page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+  padding: 0 117px;
+}
+
+.extra-content {
+}
+
+.title {
+  color: #fe7000;
+  font-family: "Inter", sans-serif;
+  font-size: 105px;
+  font-weight: 400;
+  line-height: 80px;
+
+  margin-bottom: 28px;
+}
+
+.sub-title {
+  color: #fe7000;
+  font-family: "Inter", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 40px;
+
+  padding-left: 179px;
+}
+
+.login {
+  width: 344px;
+  height: 468px;
+  padding: 40px 19px;
+
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.93);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.login-title {
+  color: #fe7000;
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.input-container {
+  width: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+
+  margin: 33px 0;
+}
+
+.input {
+  width: 306px;
+  height: 55px;
+  padding-left: 30px;
+
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  outline-color: #fe7000;
+
+  color: #ababab;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  
+}
+
+.submit-button {
+  width: 306px;
+  height: 55px;
+
+  border-radius: 5px;
+  border: none;
+
+  background: #fe7000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.horizontal-line {
+  width: 306px;
+  height: 1px;
+
+  background: rgba(254, 112, 0, 0.8);
+
+  margin-top: 47px;
+  margin-bottom: 40px;
+}
+
+.additional-link {
+  color: #fe7000;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+  text-align: center;
+}
