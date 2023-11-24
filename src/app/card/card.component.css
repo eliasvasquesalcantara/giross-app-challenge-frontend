@@ -1,0 +1,19 @@
+.container {
+  width: 532px;
+  height: 64px;
+  padding: 10px;
+
+  border-radius: 5px;
+  border: 1px solid #ddd;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text {
+  color: #3c3c3c;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}

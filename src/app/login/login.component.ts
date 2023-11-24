@@ -39,7 +39,7 @@ export class LoginComponent {
         body
       );
       if (response.data === true) {
-        this.router.navigate(['/']);
+        this.router.navigate(['/search']);
       }
     } catch (error: any) {
       if (error instanceof AxiosError) {
