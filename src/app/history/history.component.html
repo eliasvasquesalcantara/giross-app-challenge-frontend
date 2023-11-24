@@ -1,6 +1,8 @@
 <div class="container">
-  <app-card *ngFor="let item of zipCodes"
+  <app-card
+    *ngFor="let item of zipCodes"
     [textsFirstRow]="['CEP: 44230-000', 'Km: 45']"
     [textsSecondRow]="['Cidade: Amélia Rodriguês']"
+    [datetime]="datetime"
   ></app-card>
 </div>

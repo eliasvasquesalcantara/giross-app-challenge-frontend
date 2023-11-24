@@ -16,13 +16,17 @@ export class CardComponent {
   textsSecondRow: string[] = [];
 
   @Input()
-  datetime: Date = new Date();
+  datetime: Date | undefined = undefined;
 
   get time() {
+    if (this.datetime == null) return undefined;
+
     return `${this.datetime.getHours()}:${this.datetime.getMinutes()}`;
   }
 
   get date() {
+    if (this.datetime == null) return undefined;
+
     return `${this.datetime.getDate()}/${this.datetime.getMonth()}/${this.datetime.getFullYear()}`;
   }
 }

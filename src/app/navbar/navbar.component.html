@@ -1,0 +1,13 @@
+<nav class="container">
+  <ul class="nav-list">
+    <li class="nav-item" [class.nav-link-selected]="selected === 'search'">
+      <a class="nav-link" routerLink="/search">Consultar</a>
+    </li>
+    <li class="nav-item" [class.nav-link-selected]="selected === 'history'">
+      <a class="nav-link" routerLink="/history">Histórico</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/login">Sair</a>
+    </li>
+  </ul>
+</nav>

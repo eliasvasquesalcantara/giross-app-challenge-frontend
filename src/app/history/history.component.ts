@@ -11,4 +11,5 @@ import { CardComponent } from '../card/card.component';
 })
 export class HistoryComponent {
   zipCodes: string[] = ['CEP1', 'CEP2', 'CEP3', 'CEP4', 'CEP5'];
+  datetime: Date = new Date();
 }
