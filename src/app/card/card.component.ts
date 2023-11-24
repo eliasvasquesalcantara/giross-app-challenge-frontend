@@ -14,4 +14,15 @@ export class CardComponent {
 
   @Input()
   textsSecondRow: string[] = [];
+
+  @Input()
+  datetime: Date = new Date();
+
+  get time() {
+    return `${this.datetime.getHours()}:${this.datetime.getMinutes()}`;
+  }
+
+  get date() {
+    return `${this.datetime.getDate()}/${this.datetime.getMonth()}/${this.datetime.getFullYear()}`;
+  }
 }

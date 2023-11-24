@@ -1,8 +1,12 @@
 <div class="container">
   <div class="row">
-    <div class="text">CEP: 44230-000</div>
+    <div class="text" *ngFor="let text of textsFirstRow">{{ text }}</div>
+    <div class="date">
+      <div class="text date-field">{{ date }}</div>
+      <div class="text date-field">{{ time }}</div>
+    </div>
   </div>
   <div class="row">
-    <div class="text">Cidade: Amélia Rodriguês</div>
+    <div class="text" *ngFor="let text of textsSecondRow">{{ text }}</div>
   </div>
 </div>

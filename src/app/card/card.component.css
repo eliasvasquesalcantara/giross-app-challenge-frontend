@@ -11,9 +11,24 @@
   justify-content: space-between;
 }
 
+.row {
+  display: flex;
+  gap: 24px;
+}
+
+.date {
+  display: flex;
+  gap: 19px;
+  margin-left: auto;
+}
+
 .text {
   color: #3c3c3c;
   font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 400;
+}
+
+.date-field {
+  color: #ababab;
 }
