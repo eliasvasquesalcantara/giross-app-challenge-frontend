@@ -4,7 +4,7 @@ import { Router, RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { environment } from '../environments/environment.development';
-import { isTokenValid } from './utils/isTokenValid';
+import { isTokenValid } from './utilities/functions/isTokenValid';
 
 @Component({
   selector: 'app-root',

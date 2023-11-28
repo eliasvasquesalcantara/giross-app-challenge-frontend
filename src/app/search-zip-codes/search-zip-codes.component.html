@@ -1,15 +1,32 @@
 <div class="container">
-  <div class="search">
-    <input type="text" class="g-input input" placeholder="CEP" />
-    <input type="text" class="g-input input" placeholder="Km" />
-    <button class="g-button button" (click)="searchCeps()">Buscar</button>
+  <div *ngIf="errorMsg != null" class="g-error-message error-message">
+    {{ errorMsg }}
   </div>
 
+  <div class="search">
+    <input
+      type="text"
+      [(ngModel)]="cep"
+      class="g-input input"
+      placeholder="CEP"
+    />
+    <input
+      type="text"
+      [(ngModel)]="range"
+      class="g-input input"
+      placeholder="Km"
+    />
+    <button class="g-button button" (click)="searchCeps()">Buscar</button>
+  </div>
   <div class="card-container">
     <app-card
-      *ngFor="let item of zipCodes"
-      [textsFirstRow]="['CEP: 44230-000']"
-      [textsSecondRow]="['Cidade: Amélia Rodriguês']"
+      *ngFor="let cep of ceps"
+      [textsFirstRow]="['Cep: ' + cep.numeroCEP]"
+      [textsSecondRow]="[
+        'Estado: ' + cep.UF,
+        'Cidade: ' + cep.cidade,
+        'Bairro: ' + cep.bairro
+      ]"
     >
     </app-card>
   </div>
