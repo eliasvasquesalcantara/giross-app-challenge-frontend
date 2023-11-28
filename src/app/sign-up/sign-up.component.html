@@ -6,8 +6,12 @@
   <div class="form-container">
     <h3 class="form-title">Registro</h3>
 
-    <div *ngIf="errorMessage != null" class="error-message">
+    <div *ngIf="errorMessage != null" class="g-error-message">
       {{ errorMessage }}
+    </div>
+
+    <div *ngIf="successMessage != null" class="g-success-message ">
+      {{ successMessage }}
     </div>
 
     <div class="input-container">
@@ -24,7 +28,9 @@
         class="g-input auth-input"
       />
     </div>
-    <button class="g-button auth-button" (click)="handleRegister()">Cadastrar</button>
+    <button class="g-button auth-button" (click)="handleRegister()">
+      Cadastrar
+    </button>
 
     <div class="horizontal-line"></div>
 

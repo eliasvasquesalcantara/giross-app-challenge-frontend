@@ -7,7 +7,8 @@
   padding: 0;
 }
 
-.error-message {
+.g-error-message,
+.g-success-message {
   width: 306px;
   min-height: 42px;
   padding: 10px;
@@ -16,13 +17,21 @@
   justify-content: center;
   align-items: center;
 
-  border: 0.5px solid #dd3c10;
-  background-color: #ffebe8;
-
-  color: #eb5757;
   font-family: "Inter", sans-serif;
   font-size: 17px;
   font-weight: 400;
+}
+
+.g-error-message {
+  border: 0.5px solid #dd3c10;
+  background-color: #ffebe8;
+  color: #eb5757;
+}
+
+.g-success-message {
+  border: 0.5px solid #219653;
+  background-color: rgba(111, 207, 151, 40%);
+  color: #219653;
 }
 
 .g-input {

@@ -20,6 +20,7 @@ export class SignUpComponent {
   email: string = '';
   password: string = '';
   errorMessage: string | undefined = undefined;
+  successMessage: string | undefined = undefined;
 
   constructor(private router: Router) {}
 
@@ -41,8 +42,14 @@ export class SignUpComponent {
         'http://localhost:3000/auth/register',
         body
       );
-      if (response.data === true) {
-        this.router.navigate(['/login']);
+      if (response.data) {
+        this.successMessage =
+          'Conta criada com sucesso, você será redirecionado para login!';
+        this.email = '';
+        this.password = '';
+        setTimeout(() => {
+          this.router.navigate(['/login']);
+        }, 3000);
       }
     } catch (error: any) {
       if (error instanceof AxiosError) {
