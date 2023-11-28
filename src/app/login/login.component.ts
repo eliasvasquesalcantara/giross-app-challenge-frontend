@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import axios, { AxiosError } from 'axios';
 import { RouterLink, Router } from '@angular/router';
+import { environment } from '../../environments/environment.development';
 
 interface LoginDto {
   email: string;
@@ -38,7 +39,11 @@ export class LoginComponent {
         'http://localhost:3000/auth/login',
         body
       );
-      if (response.data === true) {
+      if (response.data != null) {
+        window.localStorage.setItem(
+          environment.LOCAL_STORAGE_TOKEN_KEY,
+          response.data
+        );
         this.router.navigate(['/search']);
       }
     } catch (error: any) {

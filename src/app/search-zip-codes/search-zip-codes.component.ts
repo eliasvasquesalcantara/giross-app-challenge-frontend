@@ -11,4 +11,16 @@ import { CardComponent } from '../card/card.component';
 })
 export class SearchZipCodesComponent {
   zipCodes: string[] = ['CEP1', 'CEP2', 'CEP3', 'CEP4 '];
+
+  async searchCeps() {
+    const givenCEP = '44230000';
+    try {
+      const response = await fetch(`http://localhost:3000/cep/${givenCEP}`, {
+        headers: {
+          Authorization: 'Basic ZW1haWxuYW9jaGVnb3VAZ21haWwuY29tOlRlc3RAMTIz',
+        },
+      });
+    } catch (error) {
+    }
+  }
 }
