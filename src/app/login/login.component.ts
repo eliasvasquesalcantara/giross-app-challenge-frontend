@@ -14,7 +14,7 @@ interface LoginDto {
   standalone: true,
   imports: [CommonModule, FormsModule, RouterLink],
   templateUrl: './login.component.html',
-  styleUrl: '../styles/auth.css',
+  styleUrl: '../utilities/styles/auth.css',
 })
 export class LoginComponent {
   email: string = '';

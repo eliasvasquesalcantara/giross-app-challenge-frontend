@@ -1,8 +1,12 @@
 <div class="container">
   <app-card
-    *ngFor="let item of zipCodes"
-    [textsFirstRow]="['CEP: 44230-000', 'Km: 45']"
-    [textsSecondRow]="['Cidade: Amélia Rodriguês']"
+    *ngFor="let cep of cepHistory"
+    [textsFirstRow]="['Cep: ' + cep.numeroCEP, 'Km: ' + cep.radiusInKm]"
+    [textsSecondRow]="[
+      'Estado: ' + cep.UF,
+      'Cidade: ' + cep.cidade,
+      'Bairro: ' + cep.bairro
+    ]"
     [datetime]="datetime"
   ></app-card>
 </div>

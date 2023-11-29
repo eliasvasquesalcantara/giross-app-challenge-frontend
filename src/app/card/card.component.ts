@@ -18,6 +18,21 @@ export class CardComponent {
   @Input()
   datetime: Date | undefined = undefined;
 
+  limitTextsLength(arrStr: string[], n = 10) {
+    return arrStr.map((text) => {
+      if (text.length > n) return text.slice(0, n - 3) + '...';
+      return text;
+    });
+  }
+
+  get row1(): string[] {
+    return this.limitTextsLength(this.textsFirstRow, 20);
+  }
+
+  get row2(): string[] {
+    return this.limitTextsLength(this.textsSecondRow, 20);
+  }
+
   get time() {
     if (this.datetime == null) return undefined;
 

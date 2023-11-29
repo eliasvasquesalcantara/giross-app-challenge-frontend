@@ -14,7 +14,7 @@ interface SignUpDto {
   standalone: true,
   imports: [CommonModule, FormsModule, RouterLink],
   templateUrl: './sign-up.component.html',
-  styleUrl: '../styles/auth.css',
+  styleUrl: '../utilities/styles/auth.css',
 })
 export class SignUpComponent {
   email: string = '';
