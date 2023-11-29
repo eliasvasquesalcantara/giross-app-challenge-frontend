@@ -91,6 +91,20 @@
   text-decoration: none;
 }
 
+.credentials-for-test {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+
+  border: 1px solid #fe7000;
+  margin: 20px 0;
+
+} 
+.credentials-for-test h3 {
+  font-weight: 400;
+}
+
 /* 1050 Px */
 @media (max-width: 1200px) {
   .company-name {
