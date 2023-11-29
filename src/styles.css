@@ -68,3 +68,17 @@
 
   cursor: pointer;
 }
+
+.g-tips {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+
+  border: 1px solid #fe7000;
+
+  width: 300px;
+  position: fixed;
+  left: 0;
+  top: 100px;
+}
