@@ -38,3 +38,13 @@
 
   margin-bottom: 1rem;
 }
+
+@media (max-width: 550px) {
+  .search,
+  .input,
+  .button,
+  .error-message,
+  .card-container {
+    width: 100%;
+  }
+}

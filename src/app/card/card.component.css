@@ -1,6 +1,6 @@
 .container {
   width: 532px;
-  height: 64px;
+  max-height: 64px;
   padding: 10px;
 
   border-radius: 5px;
@@ -31,4 +31,19 @@
 
 .date-field {
   color: #ababab;
+}
+
+
+@media(max-width: 550px) {
+  .container {
+    width: 100%;
+  }
+  
+  .row {
+    gap: 10px;
+  }
+  
+  .date {
+    gap: 10px;
+  }
 }
